@@ -1,0 +1,78 @@
+MIT License © 2025 Akhtar Sayed
+
+Akhtar Sayed Research‑Only License with Required Citation (AS‑ROL‑1.0)
+
+Copyright (c) 2025 Akhtar Sayed
+
+1. Definitions.
+   “Software” means this software and associated documentation files.
+   “Academic Research” means non-commercial research conducted by individual
+   researchers or by not-for-profit educational or research institutions,
+   including government labs, where the use is not primarily intended for or
+   directed toward commercial advantage or monetary compensation.
+   “Proper Citation” means both (a) including the canonical citation provided
+   in Section 3(a) in any publication, preprint, presentation, report, shared
+   dataset, or software that uses the Software or produces results with it; and
+   (b) maintaining a prominent attribution notice in source code and
+   documentation as described in Section 3(b).
+
+2. Grant of Rights (Research‑Only).
+   Subject to the conditions below, you are granted a non-exclusive,
+   non-transferable, royalty-free license to use, reproduce, and modify the
+   Software solely for Academic Research. You may create derivative works for
+   Academic Research. No other rights are granted.
+
+3. Conditions (Citation & Attribution).
+   (a) Proper Citation Required. In any public use or dissemination of results
+       generated with the Software, include the following citation (update the
+       bracketed fields as appropriate):
+
+       Sayed, Akhtar (2025). [EHNN MODEL], v[version]. [URL or DOI]. 
+       Available under the AS‑ROL‑1.0 research-only license.
+
+   (b) Attribution in Source/Docs. All copies or substantial portions of the
+       Software, and any derivative works, must retain the above copyright
+       notice, this license text, and a NOTICE file or README section stating:
+       “This work uses [EHNN MODEL] by Akhtar Sayed under AS‑ROL‑1.0
+       (Research‑Only, Citation Required).”
+
+   (c) Redistribution. You may redistribute the unmodified Software or your
+       derivative works only to other researchers for Academic Research and only
+       under this same license (AS‑ROL‑1.0). You must include this license and
+       the Proper Citation requirement with any redistribution.
+
+4. Prohibited Uses.
+   (a) No Commercial Use. Any commercial use is prohibited, including use by or
+       for the benefit of a for‑profit entity; use to provide services to third
+       parties; or use in or to develop a product or feature offered for sale,
+       subscription, or other monetary consideration.
+   (b) No Production Use. Use in production systems or safety‑critical settings
+       is prohibited.
+   (c) No circumvention. You may not remove, obfuscate, or alter notices
+       required by this license.
+
+   For commercial or production use, please contact the copyright holder for a
+   separate license.
+
+5. Third‑Party Components.
+   Any third‑party software included with the Software is licensed under its own
+   terms. This license does not grant rights to third‑party components.
+
+6. No Warranty; Liability Limited.
+   THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NON‑INFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE, EXCEPT TO THE EXTENT SUCH DISCLAIMER IS PROHIBITED BY LAW.
+
+7. Termination.
+   This license terminates automatically if you violate its terms. Upon
+   termination, all rights granted under this license cease, and you must stop
+   using the Software and destroy copies in your possession. Termination does
+   not limit any other rights or remedies of the copyright holder.
+
+8. Miscellaneous.
+   This is not an OSI‑approved “open source” license. If any provision is held
+   unenforceable, the remainder will continue in effect.

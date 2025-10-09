@@ -36,12 +36,24 @@ EHNN_Complete_Pipeline.py  # Full pipeline script
 
 ## 📊 Dataset Information
 The pipeline uses well-established **public CRISPR off-target datasets**, including:  
-- **CIRCLE-seq** (Tsai et al. 2017) – https://doi.org/10.1038/nmeth.4278  
-- **GUIDE-seq** (Tsai et al. 2015) – https://doi.org/10.1038/nbt.3117  
-- **Doench 2016** – https://doi.org/10.1038/nbt.3437  
-- **SITE-seq** – https://doi.org/10.1038/nmeth.4281  
-- **HEK293T / K562 cell lines** (Kleinstiver et al.)  
-- **CHANGE-seq** and other benchmark sets  
+Third-party Datasets328
+All third-party datasets used for off-target benchmarking, including Guide-seq [GSE70151], Kleinstiver329
+[GSE78308], SITE-seq [GSE100906], CIRCLE-seq [GSE101492], Doench [GSE67303], cell-specific330
+datasets , CHANGE-seq [GSE146603], CRISPOR, and Listgarten [nbt.4318], were obtained from their331
+respective public databases and publications . Data were downloaded in compliance with the respective332
+usage conditions as described in the source publications.The following publicly available datasets were333
+used for benchmarking off-target prediction in this study:334
+13/30
+• Guide-seq: GEO accession GSE70151 Tsai et al. (2015)335
+• Kleinstiver: GEO accession GSE78308 Kleinstiver et al. (2016)336
+• SITE-seq: GEO accession GSE100906 Cameron et al. (2017)337
+• CIRCLE-seq: GEO accession GSE101492 Tsai et al. (2017)338
+• Doench: GEO accession GSE67303 Doench et al. (2016a)339
+• CHANGE-seq: GEO accession GSE146603 Lazzarotto et al. (2020)340
+• CRISPOR database: http://crispor.tefor.net/ Haeussler et al. (2016)341
+• Listgarten dataset: https://www.nature.com/articles/nbt.4318 Listgarten et al.342
+(2018a) 
+ 
 
 All datasets contain **on-target and off-target gRNA–DNA pairs with binary cleavage labels (0/1)**.  
 

@@ -3,6 +3,12 @@
 
 ## Overview
 EHNN is a hybrid deep learning pipeline that combines XOR-based sequence encoding, k-mer context, PAM classification, and 51 extrected engineered  features to predict CRISPR–Cas9 off-target cleavage events.
+• EHNN is introduced as the first architecture that jointly integrates XOR-mismatch maps, k-mer
+  85 contexts, and PAM categories within a unified CNN–LSTM–MLP framework.
+• A 51-dimensional feature vector is extracted from each guide–target pair to comprehensively
+  quantify sequence-level determinants of off-target activity.
+• State-of-the-art performance in both accuracy and calibration is achieved across eight diverse
+  CRISPR datasets
 
 ## Project Structure
 ```bash
@@ -23,11 +29,8 @@ EHNN_Complete_Pipeline.py  # Full pipeline script
 - Language: Python
 - Frameworks: TensorFlow/Keras, Scikit-learn
 - Scripts:
-  - `train_model.py` – Model training
-  - `evaluate.py` – Model evaluation
-  - `feature_extraction.py` – Sequence feature processing
-  - `model_architecture.py` – EHNN architecture
-  - `data_loader.py` – Loads and processes datasets
+  - `EHNN_Complete_Pipeline.py` – Complete pipeline 
+
 
 ## Usage Instructions
 ```bash

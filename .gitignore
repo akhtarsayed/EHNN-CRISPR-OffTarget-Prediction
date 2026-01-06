@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.swp
+
+# Jupyter
+.ipynb_checkpoints/
+
+upload_pipeline_to_github.py
+# Environment
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Results
+# Final_Results/*.png
+# Final_Results/*.pdf
+# Final_Results/*.csv
+# Final_Results/individual/*.png
+
+# Large data (optional)
+*.h5
+*.zip
+*.tar.gz

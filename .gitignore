@@ -28,6 +28,13 @@ feature_dataset/
 normalize_dataset/
 encoded_dataset/
 
+# Test / build artefacts
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+build/
+dist/
+
 # Results
 # Final_Results/*.png
 # Final_Results/*.pdf

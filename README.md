@@ -19,10 +19,22 @@ The model fuses **CNN–LSTM–MLP** modules and achieves robust accuracy and ca
 
 ```
 EHNN_Complete_Pipeline.py  # Main pipeline: preprocessing, encoding, training/evaluation
+run.py                      # Command-line entry point (use this to run the pipeline)
 README.md
 requirements.txt
+pyproject.toml
 LICENSE
 .gitignore
+CITATION.cff
+CONTRIBUTING.md
+CHANGELOG.md
+src/ehnn/                   # Installable package (encoding helpers, tested)
+  __init__.py
+  encoding.py
+tests/                      # Unit tests for the encoding helpers
+  test_encoding.py
+configs/
+  default.yaml              # Training defaults documented from the pipeline
 original_dataset/           # Raw input CSVs (on_seq, off_seq, label)
 Final_Results/              # Consolidated outputs and figures
   full_results_EHNN.csv     # Primary summary of final results
@@ -61,13 +73,47 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-2. Run the pipeline (this runs preprocessing, encoding and evaluation):
+2. Run the pipeline from the repository root:
 
 ```powershell
-python EHNN_Complete_Pipeline.py
+python run.py --stage all
+```
+
+Or run a single stage:
+
+```powershell
+python run.py --stage features
+python run.py --stage normalize
+python run.py --stage encode
+python run.py --stage train
 ```
 
 Outputs will be written into `Final_Results/` and encoded inputs into `encoded_dataset/`.
+
+Note: the `__main__` block in `EHNN_Complete_Pipeline.py` is commented
+out, so run the pipeline through `run.py`, not by running that file
+directly.
+
+---
+
+## Testing
+
+The encoding helpers in `src/ehnn/` are dependency-free and unit-tested:
+
+```bash
+pip install pytest
+pytest
+```
+
+---
+
+## Configuration
+
+`configs/default.yaml` documents the training defaults used by the
+pipeline (seed 42, 20 epochs, batch size 128, learning rate 0.001,
+5-fold cross-validation, and so on). The original pipeline still
+hard-codes these values; the config file is the documented source of
+truth for a future configurable entry point.
 
 ---
 
@@ -75,6 +121,16 @@ Outputs will be written into `Final_Results/` and encoded inputs into `encoded_d
 
 - If you add new raw CSVs to `original_dataset/`, the pipeline will detect and process them when run.
 - Use `Final_Results/full_results_EHNN.csv` for aggregated metrics used in manuscript tables and figures.
+
+---
+
+## Contributing
+
+See `CONTRIBUTING.md`.
+
+## Citation
+
+See `CITATION.cff`.
 
 ---
 

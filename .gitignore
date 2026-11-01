@@ -23,6 +23,11 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Generated datasets (created when the pipeline runs, not committed)
+feature_dataset/
+normalize_dataset/
+encoded_dataset/
+
 # Results
 # Final_Results/*.png
 # Final_Results/*.pdf

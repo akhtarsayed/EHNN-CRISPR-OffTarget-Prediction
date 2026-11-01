@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "EHNN: Enhanced Hybrid Neural Network for CRISPR-Cas9 Off-Target Prediction"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Sayed
+    given-names: Akhtar
+    affiliation: University of Swat
+version: 0.1.0
+date-released: 2025-09-04
+license: MIT
+repository-code: "https://github.com/akhtarsayed/EHNN-CRISPR-OffTarget-Prediction"

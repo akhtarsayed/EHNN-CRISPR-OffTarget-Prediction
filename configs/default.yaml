@@ -1,0 +1,21 @@
+# Default settings documented from EHNN_Complete_Pipeline.py.
+# Note: the original pipeline currently hard-codes these values.
+# This file documents them for reproducibility and for future wiring
+# into a configurable training entry point.
+seed: 42
+test_size: 0.2
+threshold: 0.3
+kmer_size: 3
+epochs: 20
+batch_size: 128
+learning_rate: 0.001
+dropout: 0.5
+k_folds: 5
+ablation_runs: 3
+early_stopping_patience: 5
+model:
+  cnn_filters: [64, 128]
+  cnn_kernel_size: 3
+  lstm_units: 64
+  mlp_units: [128, 64]
+  head_units: [256, 1]

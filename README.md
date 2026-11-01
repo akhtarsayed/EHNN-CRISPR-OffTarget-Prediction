@@ -1,10 +1,10 @@
 # EHNN: Enhanced Hybrid Neural Network for CRISPR–Cas9 Off-Target Prediction
 
-## 📌 Description
+## Description
 
 EHNN is a hybrid deep learning pipeline that combines XOR-based sequence encoding, k-mer context, PAM classification, and engineered sequence features to predict CRISPR–Cas9 off-target cleavage events.
 
-It is the **first architecture** that jointly integrates:
+It jointly integrates:
 
 * **XOR mismatch maps**
 * **k-mer contexts**
@@ -15,34 +15,28 @@ The model fuses **CNN–LSTM–MLP** modules and achieves robust accuracy and ca
 
 ---
 
-## 📂 Project Structure
+## Project structure
 
 ```
-original_dataset/        # Raw input CSVs (on_seq, off_seq, label)
-feature_dataset/         # Extracted biochemical and sequence features
-normalize_dataset/       # Min-Max scaled features
-encoded_dataset/         # XOR/k-mer/PAM encoded datasets
-# EHNN Pipeline — current workspace
+EHNN_Complete_Pipeline.py  # Main pipeline: preprocessing, encoding, training/evaluation
+README.md
+requirements.txt
+LICENSE
+.gitignore
+original_dataset/           # Raw input CSVs (on_seq, off_seq, label)
+Final_Results/              # Consolidated outputs and figures
+  full_results_EHNN.csv     # Primary summary of final results
+  figures/                  # Generated plots
+  tables/                   # CSV/TSV result tables for manuscript
+```
 
-This repository contains the EHNN pipeline and supporting datasets/results used for CRISPR–Cas9 off-target prediction experiments.
+The following folders are generated when the pipeline runs and are not committed to the repository:
 
-**Quick summary:** the workspace includes raw datasets, encoded inputs, and final evaluation outputs (CSV + figures).
-
----
-
-**Current repository layout**
-
-- `ehnn_pipline.py` — main pipeline script (run preprocessing, encoding, training/evaluation).
-- `upload_pipeline_to_github.py` — helper to prepare/upload artifacts.
-- `requirements.txt` — Python dependencies.
-- `LICENSE` — MIT license.
-- `README.md` — this file.
-- `original_dataset/` — raw CSV files used as inputs (see list below).
-- `encoded_dataset/` — encoded inputs produced by the pipeline.
-- `Final_Results/` — consolidated outputs and figures.
-   - `full_results_EHNN.csv` — primary summary of final results.
-   - `figures/` — generated plots.
-   - `tables/` — CSV/TSV result tables for manuscript.
+```
+feature_dataset/    # Extracted biochemical and sequence features
+normalize_dataset/  # Min-Max scaled features
+encoded_dataset/    # XOR/k-mer/PAM encoded datasets
+```
 
 **Files in `original_dataset/`**
 
@@ -57,7 +51,7 @@ This repository contains the EHNN pipeline and supporting datasets/results used 
 
 ---
 
-**Quick start**
+## Quick start
 
 1. Create a virtual environment and install dependencies:
 
@@ -70,18 +64,17 @@ pip install -r requirements.txt
 2. Run the pipeline (this runs preprocessing, encoding and evaluation):
 
 ```powershell
-python ehnn_pipline.py
+python EHNN_Complete_Pipeline.py
 ```
 
 Outputs will be written into `Final_Results/` and encoded inputs into `encoded_dataset/`.
 
 ---
 
-**Notes & pointers**
+## Notes
 
 - If you add new raw CSVs to `original_dataset/`, the pipeline will detect and process them when run.
 - Use `Final_Results/full_results_EHNN.csv` for aggregated metrics used in manuscript tables and figures.
-- For debugging or custom runs, inspect `ehnn_pipline.py` to find options/flags (if present).
 
 ---
 
@@ -89,7 +82,7 @@ Outputs will be written into `Final_Results/` and encoded inputs into `encoded_d
 
 Install dependencies with:
 
-```powershell
+```
 pip install -r requirements.txt
 ```
 
@@ -98,10 +91,3 @@ pip install -r requirements.txt
 ## License
 
 MIT — see `LICENSE`.
-
----
-
-If you'd like, I can also:
-
-- add a brief usage snippet at the top of `ehnn_pipline.py` to document CLI flags, or
-- generate a short `run_example.bat` / `run_example.sh` for easy runs on Windows/Linux.
